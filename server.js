@@ -7,7 +7,8 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  res.send("Health cheack");
+  console.log("Health check endpoint hit");
+  res.send("Health check");
 });
 
 app.listen(port, () => {
